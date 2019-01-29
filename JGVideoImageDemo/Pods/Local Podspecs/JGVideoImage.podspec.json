@@ -1,0 +1,25 @@
+{
+  "name": "JGVideoImage",
+  "version": "0.0.1",
+  "summary": "IOS video image captured by camera",
+  "description": "IOS video image captured by camera for further expoloring.",
+  "homepage": "https://github.com/jimmygao123/JGVideoImage",
+  "license": "MIT",
+  "authors": {
+    "ggd": "1743257911@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/jimmygao123/JGVideoImage.git",
+    "tag": "0.0.1"
+  },
+  "source_files": "JGVideoImage/Source/**/*.{h,m}",
+  "ios": {
+    "frameworks": [
+      "AVFoundation"
+    ]
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "requires_arc": true
+}

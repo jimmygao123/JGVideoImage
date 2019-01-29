@@ -1,0 +1,9 @@
+platform :ios, '11.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'JGVideoImageDemo' do
+
+#pod 'JGVideoImage', :git => 'https://github.com/jimmygao123/JGVideoImage.git', :branch => 'master'
+pod 'JGVideoImage', :path => '../JGVideoImage.podspec'
+
+end

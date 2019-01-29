@@ -1,0 +1,565 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		005F7F0CD2B1B5942D81443F18606856 /* JGVideoImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 14E95E39D5D481D05E46DFF116F07062 /* JGVideoImage-dummy.m */; };
+		1F6E634F7239670A1B206AADFEED0279 /* Pods-JGVideoImageDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = C4ABDF99FECC5E1955B3EE18597046C2 /* Pods-JGVideoImageDemo-dummy.m */; };
+		40EAB8B21E9CCCB26D26B6E404BDAE9A /* JGCamera.h in Headers */ = {isa = PBXBuildFile; fileRef = 9434C96F30333D7B44CA89C7C71BA376 /* JGCamera.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		4D23BAEE2D1686074751EE3A63B47898 /* AVCamCameraViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D4D929F728E8BA5B3B11A8855CACDFF3 /* AVCamCameraViewController.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		569B99EE9716CEFE5B40A3338BA3E189 /* JGImageConverter.h in Headers */ = {isa = PBXBuildFile; fileRef = 4D7486F44B4D9CF3A2325CB1F1DF1F7F /* JGImageConverter.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7973DD838175DD1A6FCE1B668FFF14DB /* JGCameraPreview.h in Headers */ = {isa = PBXBuildFile; fileRef = 6380686B6DEF58B9A7B236A1C34586B4 /* JGCameraPreview.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		7D24E9FD6C2430819DA6401007EEA095 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
+		7E12D3A3BA566643A99BAC155BB31BB0 /* JGCameraSource.h in Headers */ = {isa = PBXBuildFile; fileRef = 88762D7655AFAECE5B082C383D88C74E /* JGCameraSource.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		8695BD8C50C22DD16132AD53C37B18B9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */; };
+		8B378E43A8A32373E64EAAD129F89E61 /* JGCamera.m in Sources */ = {isa = PBXBuildFile; fileRef = 287D6BEDD84CF03710777E32580851CC /* JGCamera.m */; };
+		8F693B62F1CDD3E223E84CB3D81F8AE0 /* JGCameraPreview.m in Sources */ = {isa = PBXBuildFile; fileRef = C48F55BC53E145CBCA059D886FB3307E /* JGCameraPreview.m */; };
+		99D06D6D84C0C3B756244D0B4BEBACE7 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */; };
+		A3C6F32385D21515AA63A1F08D28265E /* JGCameraSource.m in Sources */ = {isa = PBXBuildFile; fileRef = DEB3D718A8264DC43963A6EEA0329F70 /* JGCameraSource.m */; };
+		B4AA6877934F2601008B33E92AEA3D2A /* JGImageConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = AC249AF0AA856E3166500145ACF04424 /* JGImageConverter.m */; };
+		BB1C36365A6376819587D4929386760C /* AVCamCameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BBA6774CB7179DCD42D5B4FFB8D322F9 /* AVCamCameraViewController.m */; };
+		C8A3A639AEAF1B2168F7BCE1590FF1F8 /* AVCamPhotoCaptureDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 42D32C045AC2731664D10CB13B0DB7D0 /* AVCamPhotoCaptureDelegate.m */; };
+		F0F052CE9659F0B5F93A6B69AEC1D449 /* AVCamPhotoCaptureDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 61BE66D56EA3F7A6EF32B0F78A83DD6A /* AVCamPhotoCaptureDelegate.h */; settings = {ATTRIBUTES = (Project, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		008C302BBC826288716A3CB7F8BD5390 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A67148D87414E45F68CCBF315CD5364F;
+			remoteInfo = JGVideoImage;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09635DCB9E62756E3A8D069314918081 /* Pods-JGVideoImageDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-JGVideoImageDemo-acknowledgements.plist"; sourceTree = "<group>"; };
+		136A474ACFCE6FD30DF3AC28751AFC3F /* Pods-JGVideoImageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JGVideoImageDemo.release.xcconfig"; sourceTree = "<group>"; };
+		14E95E39D5D481D05E46DFF116F07062 /* JGVideoImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "JGVideoImage-dummy.m"; sourceTree = "<group>"; };
+		1CBF4ECD5D8995F605291B3CE7BCBC03 /* JGVideoImage.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = JGVideoImage.xcconfig; sourceTree = "<group>"; };
+		2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		287D6BEDD84CF03710777E32580851CC /* JGCamera.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGCamera.m; path = JGVideoImage/Source/JGCamera.m; sourceTree = "<group>"; };
+		42D32C045AC2731664D10CB13B0DB7D0 /* AVCamPhotoCaptureDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AVCamPhotoCaptureDelegate.m; path = JGVideoImage/Source/AVCamPhotoCaptureDelegate.m; sourceTree = "<group>"; };
+		46B76ACC26C5BBC1A49297D5FACA7D27 /* libPods-JGVideoImageDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-JGVideoImageDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D7486F44B4D9CF3A2325CB1F1DF1F7F /* JGImageConverter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGImageConverter.h; path = JGVideoImage/Source/JGImageConverter.h; sourceTree = "<group>"; };
+		61BE66D56EA3F7A6EF32B0F78A83DD6A /* AVCamPhotoCaptureDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AVCamPhotoCaptureDelegate.h; path = JGVideoImage/Source/AVCamPhotoCaptureDelegate.h; sourceTree = "<group>"; };
+		6380686B6DEF58B9A7B236A1C34586B4 /* JGCameraPreview.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGCameraPreview.h; path = JGVideoImage/Source/JGCameraPreview.h; sourceTree = "<group>"; };
+		707D11D0704685EA0E9619DF1728F9DB /* Pods-JGVideoImageDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JGVideoImageDemo-frameworks.sh"; sourceTree = "<group>"; };
+		840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/AVFoundation.framework; sourceTree = DEVELOPER_DIR; };
+		88762D7655AFAECE5B082C383D88C74E /* JGCameraSource.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGCameraSource.h; path = JGVideoImage/Source/JGCameraSource.h; sourceTree = "<group>"; };
+		92212C959963ECDF436E051727D8BB63 /* libJGVideoImage.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJGVideoImage.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9434C96F30333D7B44CA89C7C71BA376 /* JGCamera.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = JGCamera.h; path = JGVideoImage/Source/JGCamera.h; sourceTree = "<group>"; };
+		AC249AF0AA856E3166500145ACF04424 /* JGImageConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGImageConverter.m; path = JGVideoImage/Source/JGImageConverter.m; sourceTree = "<group>"; };
+		B9EF33FDC5C7073DB30E85ABD2008462 /* JGVideoImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "JGVideoImage-prefix.pch"; sourceTree = "<group>"; };
+		BBA6774CB7179DCD42D5B4FFB8D322F9 /* AVCamCameraViewController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = AVCamCameraViewController.m; path = JGVideoImage/Source/AVCamCameraViewController.m; sourceTree = "<group>"; };
+		C48F55BC53E145CBCA059D886FB3307E /* JGCameraPreview.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGCameraPreview.m; path = JGVideoImage/Source/JGCameraPreview.m; sourceTree = "<group>"; };
+		C4ABDF99FECC5E1955B3EE18597046C2 /* Pods-JGVideoImageDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-JGVideoImageDemo-dummy.m"; sourceTree = "<group>"; };
+		D4D929F728E8BA5B3B11A8855CACDFF3 /* AVCamCameraViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = AVCamCameraViewController.h; path = JGVideoImage/Source/AVCamCameraViewController.h; sourceTree = "<group>"; };
+		DC93CB7D195283CE8CAD963FFFB558C2 /* JGVideoImage.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = JGVideoImage.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		DEB3D718A8264DC43963A6EEA0329F70 /* JGCameraSource.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = JGCameraSource.m; path = JGVideoImage/Source/JGCameraSource.m; sourceTree = "<group>"; };
+		E206F6502CD500A67709D711AA60A476 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		EB33097E5FCCE3E19583CB53EA284AE0 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F33608BA5295EAC83BAE8B74BA1B5D8A /* Pods-JGVideoImageDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-JGVideoImageDemo-resources.sh"; sourceTree = "<group>"; };
+		FA37E0B9C7D1258C9562E298644B042E /* Pods-JGVideoImageDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-JGVideoImageDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FE08F0A5A469C8A820AA0BBB6F810305 /* Pods-JGVideoImageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-JGVideoImageDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A6D4562199AA644B38AE3B295540727 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99D06D6D84C0C3B756244D0B4BEBACE7 /* AVFoundation.framework in Frameworks */,
+				8695BD8C50C22DD16132AD53C37B18B9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D1D07F8E698A15F5037E441AC0FCC615 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7D24E9FD6C2430819DA6401007EEA095 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0DBD30EAF4E8BBAE5169CA58477FE038 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F2F696FB8AE931C8C9FAAE53122F7E77 /* JGVideoImage */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		1C22CEE830C22BE1785E99D6E24561BA /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				1CBF4ECD5D8995F605291B3CE7BCBC03 /* JGVideoImage.xcconfig */,
+				14E95E39D5D481D05E46DFF116F07062 /* JGVideoImage-dummy.m */,
+				B9EF33FDC5C7073DB30E85ABD2008462 /* JGVideoImage-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "JGVideoImageDemo/Pods/Target Support Files/JGVideoImage";
+			sourceTree = "<group>";
+		};
+		20C5DC92F7F5992671D8ED028A9ECA6F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				92212C959963ECDF436E051727D8BB63 /* libJGVideoImage.a */,
+				46B76ACC26C5BBC1A49297D5FACA7D27 /* libPods-JGVideoImageDemo.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AB9C43F4BAD2992BD9EE60E0C1AC390B /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		465E6DF34CF4E58D7BC40D94573AEBD0 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F947E90338021FED160930BC9C77FB41 /* Pods-JGVideoImageDemo */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		7325450201417478F642BCC02A19C8AA /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				DC93CB7D195283CE8CAD963FFFB558C2 /* JGVideoImage.podspec */,
+				E206F6502CD500A67709D711AA60A476 /* LICENSE */,
+				EB33097E5FCCE3E19583CB53EA284AE0 /* README.md */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0DBD30EAF4E8BBAE5169CA58477FE038 /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				20C5DC92F7F5992671D8ED028A9ECA6F /* Products */,
+				465E6DF34CF4E58D7BC40D94573AEBD0 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AB9C43F4BAD2992BD9EE60E0C1AC390B /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				840966EAD0718963750ABB9F4A6EB218 /* AVFoundation.framework */,
+				2828B7422B8C5C7BC4BF9C20A6D7B397 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		F2F696FB8AE931C8C9FAAE53122F7E77 /* JGVideoImage */ = {
+			isa = PBXGroup;
+			children = (
+				D4D929F728E8BA5B3B11A8855CACDFF3 /* AVCamCameraViewController.h */,
+				BBA6774CB7179DCD42D5B4FFB8D322F9 /* AVCamCameraViewController.m */,
+				61BE66D56EA3F7A6EF32B0F78A83DD6A /* AVCamPhotoCaptureDelegate.h */,
+				42D32C045AC2731664D10CB13B0DB7D0 /* AVCamPhotoCaptureDelegate.m */,
+				9434C96F30333D7B44CA89C7C71BA376 /* JGCamera.h */,
+				287D6BEDD84CF03710777E32580851CC /* JGCamera.m */,
+				6380686B6DEF58B9A7B236A1C34586B4 /* JGCameraPreview.h */,
+				C48F55BC53E145CBCA059D886FB3307E /* JGCameraPreview.m */,
+				88762D7655AFAECE5B082C383D88C74E /* JGCameraSource.h */,
+				DEB3D718A8264DC43963A6EEA0329F70 /* JGCameraSource.m */,
+				4D7486F44B4D9CF3A2325CB1F1DF1F7F /* JGImageConverter.h */,
+				AC249AF0AA856E3166500145ACF04424 /* JGImageConverter.m */,
+				7325450201417478F642BCC02A19C8AA /* Pod */,
+				1C22CEE830C22BE1785E99D6E24561BA /* Support Files */,
+			);
+			name = JGVideoImage;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		F947E90338021FED160930BC9C77FB41 /* Pods-JGVideoImageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				FA37E0B9C7D1258C9562E298644B042E /* Pods-JGVideoImageDemo-acknowledgements.markdown */,
+				09635DCB9E62756E3A8D069314918081 /* Pods-JGVideoImageDemo-acknowledgements.plist */,
+				C4ABDF99FECC5E1955B3EE18597046C2 /* Pods-JGVideoImageDemo-dummy.m */,
+				707D11D0704685EA0E9619DF1728F9DB /* Pods-JGVideoImageDemo-frameworks.sh */,
+				F33608BA5295EAC83BAE8B74BA1B5D8A /* Pods-JGVideoImageDemo-resources.sh */,
+				FE08F0A5A469C8A820AA0BBB6F810305 /* Pods-JGVideoImageDemo.debug.xcconfig */,
+				136A474ACFCE6FD30DF3AC28751AFC3F /* Pods-JGVideoImageDemo.release.xcconfig */,
+			);
+			name = "Pods-JGVideoImageDemo";
+			path = "Target Support Files/Pods-JGVideoImageDemo";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		2F40E63F8DD9B1155E6AD82C6530CD5A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D23BAEE2D1686074751EE3A63B47898 /* AVCamCameraViewController.h in Headers */,
+				F0F052CE9659F0B5F93A6B69AEC1D449 /* AVCamPhotoCaptureDelegate.h in Headers */,
+				40EAB8B21E9CCCB26D26B6E404BDAE9A /* JGCamera.h in Headers */,
+				7973DD838175DD1A6FCE1B668FFF14DB /* JGCameraPreview.h in Headers */,
+				7E12D3A3BA566643A99BAC155BB31BB0 /* JGCameraSource.h in Headers */,
+				569B99EE9716CEFE5B40A3338BA3E189 /* JGImageConverter.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2EE17169C7DB593C7C0F85BFF6C535FD /* Pods-JGVideoImageDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B54CB693D1661C24AD2AF83BDB11AEF /* Build configuration list for PBXNativeTarget "Pods-JGVideoImageDemo" */;
+			buildPhases = (
+				4BE748A1E271ED7C7406E674D26270E7 /* Sources */,
+				D1D07F8E698A15F5037E441AC0FCC615 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4AD3B09FD82EB44DE767AE633E8AA9CC /* PBXTargetDependency */,
+			);
+			name = "Pods-JGVideoImageDemo";
+			productName = "Pods-JGVideoImageDemo";
+			productReference = 46B76ACC26C5BBC1A49297D5FACA7D27 /* libPods-JGVideoImageDemo.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		A67148D87414E45F68CCBF315CD5364F /* JGVideoImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AFA3045835E91DF46198EC8B4D6CCE12 /* Build configuration list for PBXNativeTarget "JGVideoImage" */;
+			buildPhases = (
+				85890EC3871D3DB3C31DEE850EBB3371 /* Sources */,
+				0A6D4562199AA644B38AE3B295540727 /* Frameworks */,
+				2F40E63F8DD9B1155E6AD82C6530CD5A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JGVideoImage;
+			productName = JGVideoImage;
+			productReference = 92212C959963ECDF436E051727D8BB63 /* libJGVideoImage.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 20C5DC92F7F5992671D8ED028A9ECA6F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A67148D87414E45F68CCBF315CD5364F /* JGVideoImage */,
+				2EE17169C7DB593C7C0F85BFF6C535FD /* Pods-JGVideoImageDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4BE748A1E271ED7C7406E674D26270E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F6E634F7239670A1B206AADFEED0279 /* Pods-JGVideoImageDemo-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85890EC3871D3DB3C31DEE850EBB3371 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BB1C36365A6376819587D4929386760C /* AVCamCameraViewController.m in Sources */,
+				C8A3A639AEAF1B2168F7BCE1590FF1F8 /* AVCamPhotoCaptureDelegate.m in Sources */,
+				8B378E43A8A32373E64EAAD129F89E61 /* JGCamera.m in Sources */,
+				8F693B62F1CDD3E223E84CB3D81F8AE0 /* JGCameraPreview.m in Sources */,
+				A3C6F32385D21515AA63A1F08D28265E /* JGCameraSource.m in Sources */,
+				B4AA6877934F2601008B33E92AEA3D2A /* JGImageConverter.m in Sources */,
+				005F7F0CD2B1B5942D81443F18606856 /* JGVideoImage-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4AD3B09FD82EB44DE767AE633E8AA9CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = JGVideoImage;
+			target = A67148D87414E45F68CCBF315CD5364F /* JGVideoImage */;
+			targetProxy = 008C302BBC826288716A3CB7F8BD5390 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		08638A96A528B1EC32DE62F8A728389D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		256C2E3B169B7CDACDB384C7149757C3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 136A474ACFCE6FD30DF3AC28751AFC3F /* Pods-JGVideoImageDemo.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		269FBED305AF7C9BAC232874297FB390 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CBF4ECD5D8995F605291B3CE7BCBC03 /* JGVideoImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/JGVideoImage/JGVideoImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = JGVideoImage;
+				PRODUCT_NAME = JGVideoImage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B3995C2071255017EA8F50806730EE26 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1CBF4ECD5D8995F605291B3CE7BCBC03 /* JGVideoImage.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				GCC_PREFIX_HEADER = "Target Support Files/JGVideoImage/JGVideoImage-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = JGVideoImage;
+				PRODUCT_NAME = JGVideoImage;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FA1A92AB9FE10711B4E45A233F0BACCF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FE08F0A5A469C8A820AA0BBB6F810305 /* Pods-JGVideoImageDemo.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DAE5233986C01ADB6E67169C53A3FD2 /* Debug */,
+				08638A96A528B1EC32DE62F8A728389D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B54CB693D1661C24AD2AF83BDB11AEF /* Build configuration list for PBXNativeTarget "Pods-JGVideoImageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FA1A92AB9FE10711B4E45A233F0BACCF /* Debug */,
+				256C2E3B169B7CDACDB384C7149757C3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AFA3045835E91DF46198EC8B4D6CCE12 /* Build configuration list for PBXNativeTarget "JGVideoImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				269FBED305AF7C9BAC232874297FB390 /* Debug */,
+				B3995C2071255017EA8F50806730EE26 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

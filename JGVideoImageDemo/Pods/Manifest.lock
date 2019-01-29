@@ -1,0 +1,16 @@
+PODS:
+  - JGVideoImage (0.0.1)
+
+DEPENDENCIES:
+  - JGVideoImage (from `../JGVideoImage.podspec`)
+
+EXTERNAL SOURCES:
+  JGVideoImage:
+    :path: "../JGVideoImage.podspec"
+
+SPEC CHECKSUMS:
+  JGVideoImage: 08ec1310224bac616967d521c2801b9a031643a5
+
+PODFILE CHECKSUM: c001023b3b31c2cd11b405940229b9c702c5ceb6
+
+COCOAPODS: 1.5.3
