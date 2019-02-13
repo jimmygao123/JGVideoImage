@@ -20,6 +20,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *sessionPreset;
 @property (nonatomic, strong) JGCameraPreview *preview;
 
+
+@property (nonatomic, assign, getter=isLivePhotoCaptureEnabled) BOOL livePhotoCaptureEnabled;
+
 -(void)captureVideoData:(void (^)(CMSampleBufferRef samplebuffer, NSError *error))completion;
 -(void)captureAudioData:(void (^)(CMSampleBufferRef samplebuffer, NSError *error))completion;
 -(void)takePhoto:(void (^)(AVCapturePhoto *photo, NSError *error))completion API_AVAILABLE(ios(11.0));

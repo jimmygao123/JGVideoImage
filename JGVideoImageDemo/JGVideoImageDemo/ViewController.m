@@ -48,6 +48,21 @@
    
 }
 
+- (IBAction)livePhotoEnable:(id)sender {
+    
+    UIButton *btn = (UIButton *)sender;
+    
+    BOOL isLivePhotoCaptureEnabled = self.camera.isLivePhotoCaptureEnabled;
+    self.camera.livePhotoCaptureEnabled = !isLivePhotoCaptureEnabled;
+    
+    if(self.camera.isLivePhotoCaptureEnabled){
+        [btn setTitle:@"livephoto on" forState:UIControlStateNormal];
+    }else{
+        [btn setTitle:@"livephoto off" forState:UIControlStateNormal];
+    }
+}
+
+
 - (IBAction)switchPreset:(id)sender {
     
     NSString *oldPreset = self.camera.sessionPreset;

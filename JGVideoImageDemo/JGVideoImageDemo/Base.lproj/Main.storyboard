@@ -42,6 +42,14 @@
                                     <action selector="switchCamera:" destination="BYZ-38-t0r" eventType="touchUpInside" id="joX-v9-Ypi"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Twn-eq-pPF">
+                                <rect key="frame" x="133" y="381" width="109" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="livephotoEnable"/>
+                                <connections>
+                                    <action selector="livePhotoEnable:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CJ9-P5-uNa"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

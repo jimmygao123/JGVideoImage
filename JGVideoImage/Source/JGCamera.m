@@ -184,11 +184,16 @@ API_AVAILABLE(ios(11.0))
     
     NSLog(@"jimmy_%@",photo);
     if(output == _photoOutput){
-        if(_photoBlock){
-            CVPixelBufferLockBaseAddress(photo.pixelBuffer, 0);
-            _photoBlock(photo, error);
-            CVPixelBufferUnlockBaseAddress(photo.pixelBuffer, 0);
+        if(photo.isRawPhoto){
+            
+        }else{
+            if(_photoBlock){
+                CVPixelBufferLockBaseAddress(photo.pixelBuffer, 0);
+                _photoBlock(photo, error);
+                CVPixelBufferUnlockBaseAddress(photo.pixelBuffer, 0);
+            }
         }
+        
     }
 }
 
@@ -212,13 +217,26 @@ API_AVAILABLE(ios(11.0))
             NSLog(@"不支持改Preset:%@",sessionPreset);
         }
 
-//        if([_photoOutput isLivePhotoCaptureSupported]){
-//            _photoOutput.livePhotoCaptureEnabled = [_photoOutput isLivePhotoCaptureSupported];
-//        }
+        if([_photoOutput isLivePhotoCaptureSupported]){
+            _photoOutput.livePhotoCaptureEnabled = [_photoOutput isLivePhotoCaptureSupported];
+        }
 
         [_session commitConfiguration];
     }
 }
+
+- (void)setLivePhotoCaptureEnabled:(BOOL)livePhotoCaptureEnabled{
+    [_session beginConfiguration];
+    if([_photoOutput isLivePhotoCaptureSupported]){
+        _photoOutput.livePhotoCaptureEnabled = livePhotoCaptureEnabled;
+    }
+    [_session commitConfiguration];
+}
+
+-(BOOL)isLivePhotoCaptureEnabled{
+    return (_photoOutput.isLivePhotoCaptureSupported && _photoOutput.livePhotoCaptureEnabled);
+}
+
 
 #pragma mark ---Private----
 
@@ -351,8 +369,7 @@ API_AVAILABLE(ios(11.0))
             if([photoOutput isLivePhotoCaptureSupported]){
                 photoOutput.livePhotoCaptureEnabled = YES;
             }
-            
-           _photoOutput = photoOutput;
+            _photoOutput = photoOutput;
             
             //            _photoOutput.livePhotoCaptureEnabled = _photoOutput.livePhotoCaptureSupported;
             //            if (@available(iOS 11.0, *)) {
@@ -462,5 +479,8 @@ API_AVAILABLE(ios(11.0))
 //    NSLog(@"jimmy_ HighRes = %@",self.camera.device.activeFormat.highResolutionStillImageDimensions);
     
     NSLog(@"jimmy_ sessionformat = %@", _session);
+    
+    NSLog(@"jimmy_ photoOutput.HiRes:%d",_photoOutput.isHighResolutionCaptureEnabled);
+    NSLog(@"jimmy_ photoOutput.livePhoto:%d",_photoOutput.isLivePhotoCaptureEnabled);
 }
 @end
