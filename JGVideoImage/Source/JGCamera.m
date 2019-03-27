@@ -163,7 +163,8 @@ API_AVAILABLE(ios(11.0))
             CVPixelBufferLockBaseAddress(pb, 0);
 //            CVPixelBufferRetain(pb);
             _videoDataBlock(sampleBuffer,nil);
-            testImage = [JGImageConverter imageFromPixelBuffer:pb];
+            [self oneSecondStatistic];
+//            testImage = [JGImageConverter imageFromPixelBuffer:pb];
 
             CVPixelBufferUnlockBaseAddress(pb, 0);
 //            CVPixelBufferRelease(pb);
@@ -353,6 +354,8 @@ API_AVAILABLE(ios(11.0))
         NSLog(@"Couldn't add video output");
     }
     
+    [self switchFormatWithDesiredFPS:240.f];
+    
     [_session commitConfiguration];
 }
 
@@ -482,5 +485,83 @@ API_AVAILABLE(ios(11.0))
     
     NSLog(@"jimmy_ photoOutput.HiRes:%d",_photoOutput.isHighResolutionCaptureEnabled);
     NSLog(@"jimmy_ photoOutput.livePhoto:%d",_photoOutput.isLivePhotoCaptureEnabled);
+}
+
+- (void)switchFormatWithDesiredFPS:(CGFloat)desiredFPS
+{
+    BOOL isRunning = _session.isRunning;
+    
+    if (isRunning)  [_session stopRunning];
+    
+    AVCaptureDevice *videoDevice = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    AVCaptureDeviceFormat *selectedFormat = nil;
+    int32_t maxWidth = 0;
+    AVFrameRateRange *frameRateRange = nil;
+    
+    for (AVCaptureDeviceFormat *format in [videoDevice formats]) {
+        
+        for (AVFrameRateRange *range in format.videoSupportedFrameRateRanges) {
+            
+            CMFormatDescriptionRef desc = format.formatDescription;
+            CMVideoDimensions dimensions = CMVideoFormatDescriptionGetDimensions(desc);
+            int32_t width = dimensions.width;
+            
+            if (range.minFrameRate <= desiredFPS && desiredFPS <= range.maxFrameRate && width >= maxWidth) {
+                
+                selectedFormat = format;
+                frameRateRange = range;
+                maxWidth = width;
+            }
+        }
+    }
+    
+    if (selectedFormat) {
+        
+        if ([videoDevice lockForConfiguration:nil]) {
+            
+            NSLog(@"selected format:%@", selectedFormat);
+            videoDevice.activeFormat = selectedFormat;
+            videoDevice.activeVideoMinFrameDuration = CMTimeMake(1, (int32_t)desiredFPS);
+            videoDevice.activeVideoMaxFrameDuration = CMTimeMake(1, (int32_t)desiredFPS);
+            [videoDevice unlockForConfiguration];
+        }
+    }
+    
+    if (isRunning) [_session startRunning];
+}
+
+
+- (void)oneSecondStatisticDropFPS{
+    static double lastTime = 0;
+    static int fps = 0;
+    fps ++;
+    NSTimeInterval timeInterval = [[NSDate date] timeIntervalSince1970];
+    if(timeInterval - lastTime > 1){
+        NSLog(@"drop fps :%d",fps);
+        fps = 0;
+        lastTime = timeInterval;
+    }
+}
+
+- (void)oneSecondStatistic{
+    static double lastTime = 0;
+    static int fps = 0;
+    fps ++;
+    NSTimeInterval timeInterval = [[NSDate date] timeIntervalSince1970];
+    if(timeInterval - lastTime > 1){
+        NSLog(@"fps :%d",fps);
+        fps = 0;
+        lastTime = timeInterval;
+    }
+}
+// =============================================================================
+#pragma mark - AVCaptureVideoDataOutputSampleBufferDelegate
+- (void)captureOutput:(AVCaptureOutput *)output didDropSampleBuffer:(CMSampleBufferRef)sampleBuffer fromConnection:(AVCaptureConnection *)connection API_AVAILABLE(ios(6.0)){
+    
+    CMAttachmentMode attachmentMode = 0;
+    NSString *reason = CMGetAttachment(sampleBuffer, kCMSampleBufferAttachmentKey_DroppedFrameReason, &attachmentMode);
+    
+    [self oneSecondStatisticDropFPS];
+    NSLog(@"drop reason:%@",reason);
 }
 @end

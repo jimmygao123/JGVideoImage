@@ -10,23 +10,55 @@
 #import "JGCamera.h"
 #import "JGImageConverter.h"
 #import "JGCameraPreview.h"
+#import "JGVideoEncoder.h"
 
 @interface ViewController ()
 @property (strong, nonatomic)JGCamera *camera;
+@property (strong, nonatomic)JGVideoEncoder *encoder;
+
 @property (strong, nonatomic) IBOutlet JGCameraPreview *cameraView;
+
+@property (strong, nonatomic) NSFileHandle *fileHandle;
+@property (assign, nonatomic) BOOL needRecord;
 @end
 
 @implementation ViewController
+
+- (NSString *)getFilehandle{
+    NSArray* documentsArray = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
+    NSString* documents = documentsArray.firstObject;
+    NSString* tmpPath = [documents stringByAppendingPathComponent:@"裸流.h264"];
+    NSLog(@"tmpPath = %@",tmpPath);
+    [[NSFileManager defaultManager] createFileAtPath:tmpPath contents:nil attributes:nil];
+    return tmpPath;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.camera = [[JGCamera alloc]init];
     self.camera.preview = self.cameraView;
+    
+    self.encoder = [[JGVideoEncoder alloc] init];
+    [self.encoder prepareEncoderWithWidth:1920 andHeight:1080];
+    
+    //获取裸流文件句柄
+    self.fileHandle = [NSFileHandle fileHandleForWritingAtPath:[self getFilehandle]];
+
+    
     __weak typeof(self) weakSelf = self;
     [self.camera captureVideoData:^(CMSampleBufferRef  _Nonnull samplebuffer, NSError * _Nonnull error) {
         CVPixelBufferRef pb = CMSampleBufferGetImageBuffer(samplebuffer);
         __strong typeof(self) strongSelf = weakSelf;
         
+        if(self.needRecord){
+            [strongSelf.encoder pushFrame:samplebuffer andReturnedEncodedData:^(NSData * _Nonnull encodedData) {
+                
+                [strongSelf.fileHandle writeData:encodedData];
+            }];
+        }else{
+            
+        };
+       
 //        NSLog(@"capture frame:(%zu,%zu)",CVPixelBufferGetWidth(pb),CVPixelBufferGetHeight(pb));
     }];
     // Do any additional setup after loading the view, typically from a nib.
@@ -118,5 +150,9 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     [self.camera cameraDebugInfo];
+    self.needRecord = !self.needRecord;
+    if(!self.needRecord){
+        [self.fileHandle closeFile];
+    }
 }
 @end

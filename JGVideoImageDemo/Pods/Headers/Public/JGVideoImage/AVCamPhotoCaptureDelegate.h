@@ -1,0 +1,1 @@
+../../../../../JGVideoImage/Source/AVCamPhotoCaptureDelegate.h

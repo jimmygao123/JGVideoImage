@@ -27,6 +27,9 @@ NS_ASSUME_NONNULL_BEGIN
 -(void)captureAudioData:(void (^)(CMSampleBufferRef samplebuffer, NSError *error))completion;
 -(void)takePhoto:(void (^)(AVCapturePhoto *photo, NSError *error))completion API_AVAILABLE(ios(11.0));
 
+-(void)startRecordWithPath:(NSString *)path;
+-(void)stopRecord;
+
 -(void)switchCamera;
 
 -(void)cameraDebugInfo;
